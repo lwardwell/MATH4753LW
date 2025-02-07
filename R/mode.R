@@ -5,7 +5,7 @@
 #' @returns Mode of the data
 #' @export
 #'
-#' @examples
+#' @examples getmode(data$numbers)
 getmode <- function(v) {
   uniqv <- unique(v)
   uniqv[which.max(tabulate(match(v, uniqv)))]
