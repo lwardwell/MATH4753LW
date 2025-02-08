@@ -2,8 +2,8 @@
 #'
 #' @param x A vector of categorical data for which the Pareto chart will be generated.
 #' @param mn A character string for the title of the Pareto chart (default is "Pareto barplot").
-#' @param ...
-#'
+#' @param ... Additional arguments passed to barplot
+#' @importFrom graphics axis barplot hist layout mtext par segments title plot
 #' @returns A Pareto chart (bar plot with a cumulative percentage line).
 #' @export
 #'

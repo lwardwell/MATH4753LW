@@ -22,5 +22,5 @@ A sophisicated plot
 Scatter Histogram
 }
 \examples{
-\dontrun {with(ddt, scatterhist(LENGTH, WEIGHT, xlab="LENGTH"))}
+with(mtcars, scatterhist(mpg, wt, xlab="MPG"))
 }

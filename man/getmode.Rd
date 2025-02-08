@@ -13,8 +13,9 @@ getmode(v)
 Mode of the data
 }
 \description{
-Mode
+This function calculates the mode of a set of data
 }
 \examples{
-getmode(data$numbers)
+sample_data <- c(1, 2, 2, 3, 3, 3, 4, 4)
+getmode(sample_data)
 }

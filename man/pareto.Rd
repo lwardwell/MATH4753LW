@@ -11,7 +11,7 @@ pareto(x, mn = "Pareto barplot", ...)
 
 \item{mn}{A character string for the title of the Pareto chart (default is "Pareto barplot").}
 
-\item{...}{}
+\item{...}{Additional arguments passed to barplot}
 }
 \value{
 A Pareto chart (bar plot with a cumulative percentage line).
