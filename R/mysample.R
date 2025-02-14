@@ -1,14 +1,15 @@
-#' Binomial Simulation Function
+#' Sample Simulation Function
 #'
 #' @param n Size of sample
 #' @param iter Number of iterations
 #' @param time Time between iterations
 #'
+#' @importFrom grDevices rainbow
 #' @returns A barplot of the sample
 #' @export
 #'
 #' @examples
-#' Example 1: Basic usage with default parameters
+#' # Example 1: Basic usage with default parameters
 #' mysample(n = 100)
 #'
 #' # Example 2: Increase the number of iterations
