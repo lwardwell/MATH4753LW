@@ -2,6 +2,7 @@
 
 export(getmode)
 export(mybin)
+export(myhyper)
 export(mysample)
 export(mysq)
 export(pareto)
