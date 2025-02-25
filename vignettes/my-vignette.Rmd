@@ -1,0 +1,72 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753LW)
+```
+
+# Introduction
+
+The MATH4753LW package contains functions utilized in the MATH4753 course at the University of Oklahoma. This vignette provides examples of how to use the functions in the package.
+
+# mysq function
+
+The mysq function calculates the square of a number. For example, the square of 3 is 9.
+
+```{r}
+mysq(3)
+```
+
+mysq() can also square a vector of numbers. For example, the squares of 1, 2, and 3 are 1, 4, and 9, respectively.
+
+```{r}
+mysq(1:3)
+```
+
+mysq() can also square a matrix of numbers.
+
+```{r}
+mysq(matrix(1:9, nrow = 3))
+```
+
+# getmode function
+
+The mode function calculates the mode of a vector of numbers. For example, the mode of 1, 2, 2, 3, and 4 is 2.
+
+```{r}
+getmode(c(1, 2, 2, 3, 4))
+```
+
+# mysample function
+
+The mysample function generates random samples of n numbers from 1-10 with replacement, for a specified number of iterations, and shows a barplot with the frequency of each number for each iteration. For example, the following code generates 10 random samples of 10 numbers from 1-10 with replacement. (Default iterations are 10 with .5 seconds between each barplot generation)
+
+
+```{r}
+mysample(10)
+```
+
+You can also change the number of iterations and time between each iteration.
+
+```{r}
+mysample(10, 5, 1)
+```
+
+# mybin function
+
+The mybin function creates a histogram of a vector of numbers with a specified number of bins. For example, the following code creates a histogram of 100 random numbers from a normal distribution with 10 bins.
+
+```{r}

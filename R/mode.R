@@ -1,5 +1,5 @@
 #' @title Mode
-#' @description This function calculates the mode of a set of data
+#' @description This function calculates the mode of a set of datause_test
 #' @param v A set of data for which the mode should be calculated
 #'
 #' @returns Mode of the data
