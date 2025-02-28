@@ -8,6 +8,7 @@
 #'
 #' @importFrom stats dnorm pnorm
 #' @importFrom graphics plot polygon
+#' @importFrom graphics text
 #' @returns A list with the mean and standard deviation
 #' @export
 #'
@@ -30,11 +31,16 @@ myncurve = function(mu, sigma, a){
         plot(xcurve, ycurve, type="l", lwd=2,
         xlab="x", ylab="Density",
         main=paste("Normal Curve: mu=", mu, ", sigma=", sigma))
-  #Shade the area under the curve to the left of a
+  # Shade the area under the curve to the left of a
         xshade = seq(mu - 3*sigma, a, length=1000)
         yshade = dnorm(xshade, mean=mu, sd=sigma)
                 polygon(c(xshade,a),
                 c(yshade, 0), col="pink")
         prob = pnorm(a, mean=mu, sd=sigma)
+
+  # Add text to the plot to display the probability
+        text(x = a, y = max(ycurve) * 0.8,  # Position text near the top of the plot
+             labels = paste("P(X <= ", a, ") = ", round(prob, 4)),
+             col = "blue", pos = 4)  # Position text to the right of `a`
   list(mu = mu, sigma = sigma, a = a, prob = prob)
 }
