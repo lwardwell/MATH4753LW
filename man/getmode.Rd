@@ -13,7 +13,7 @@ getmode(v)
 Mode of the data
 }
 \description{
-This function calculates the mode of a set of data
+This function calculates the mode of a set of datause_test
 }
 \examples{
 sample_data <- c(1, 2, 2, 3, 3, 3, 4, 4)
