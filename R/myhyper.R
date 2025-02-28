@@ -25,7 +25,7 @@
 myhyper=function(iter=100,N=20,r=12,n=5){
   # make a matrix to hold the samples
   # initially filled with NA's
-  sam.mat=matrix(NA,nr=n,nc=iter, byrow=TRUE)
+  sam.mat=matrix(NA,nrow=n,ncol=iter, byrow=TRUE)
   #Make a vector to hold the number of successes over the trials
   succ=c()
   for( i in 1:iter){
