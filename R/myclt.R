@@ -1,3 +1,5 @@
+utils::globalVariables("x")
+
 #' My Central Limit Theorem Function
 #'
 #' Demonstrates the Central Limit Theorem by generating the distribution of sums of uniform random variables and
@@ -11,7 +13,7 @@
 #' @importFrom stats runif dnorm
 #' @importFrom graphics hist curve
 #'
-#' @returns A histogram of the distribution of the sum of uniform random variables and the normal distribution
+#' @return A histogram of the distribution of the sum of uniform random variables and the normal distribution
 #' @export
 #'
 #' @examples
