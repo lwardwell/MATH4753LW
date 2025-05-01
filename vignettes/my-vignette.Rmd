@@ -70,3 +70,5 @@ mysample(10, 5, 1)
 The mybin function creates a histogram of a vector of numbers with a specified number of bins. For example, the following code creates a histogram of 100 random numbers from a normal distribution with 10 bins.
 
 ```{r}
+mybin(iter = 100)
+```
